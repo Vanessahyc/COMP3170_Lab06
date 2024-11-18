@@ -1,0 +1,49 @@
+export default function Country({ flags, common, capital, population, languages, currencies, area, region, continents, googleMaps}) {
+    return(
+        <div>
+            <div>
+                <div>
+                    <img src={url} alt={common}/>
+                </div>
+                <p>{common}</p>
+            </div>
+            <div>
+                <p>
+                    <span>Official name:</span>
+                    <span>{common}</span>
+                </p>
+                <p>
+                    <span>Capital:</span>
+                    <span>{capital}</span>
+                </p>
+                <p>
+                    <span>Population:</span>
+                    <span>{population}</span>
+                </p>
+                <p>
+                    <span>Languages:</span>
+                    <span>{languages}</span>
+                </p>
+                <p>
+                    <span>Currency:</span>
+                    <span>{currencies}</span>
+                </p>   
+                <p>
+                    <span>Area(mi"<sup>2</sup>"):</span>
+                    <span>{area}</span>
+                </p>
+                <p>
+                    <span>Subregion:</span>
+                    <span>{region}</span>
+                </p>
+                <p>
+                    <span>Continents:</span>
+                    <span>{continents}</span>
+                </p>
+                <p>
+                    <a href={googleMaps} target="_blank">Show on Google Maps</a>
+                </p>
+            </div>
+        </div>
+    )
+}
